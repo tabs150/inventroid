@@ -5,25 +5,25 @@ import ProductList from './components/ProductList';
 function App() {
   const [items, setItems] = useState([
     {
-      item: 'Castle Lite',
+      name: 'Castle Lite',
       volume: 660,
       inStock: false,
       quantity: 0
     },
     {
-      item: 'Castle Larger',
+      name: 'Castle Larger',
       volume: 750,
       inStock: false,
       quantity: 0
     },
     {
-      item: 'Black Label',
+      name: 'Black Label',
       volume: 750,
       inStock: false,
       quantity: 0
     },
     {
-      item: 'Hansa Pilsener',
+      name: 'Hansa Pilsener',
       volume: 750,
       inStock: false,
       quantity: 0
@@ -32,7 +32,7 @@ function App() {
   return (
     <div className='App'>
       <h1>I am starting point</h1>
-      <ProductList />
+      <ProductList value={items} />
     </div>
   );
 }

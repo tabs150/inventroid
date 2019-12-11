@@ -1,11 +1,11 @@
 import React from 'react';
 import ProductItem from './ProductItem';
 
-function Product() {
+function Product({ index, item }) {
   return (
     <div>
-      <h3>I display Product</h3>
-      <ProductItem />
+      <h3>{item.name}</h3>
+      <ProductItem value={item} />
     </div>
   );
 }
