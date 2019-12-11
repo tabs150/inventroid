@@ -1,24 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import ProductList from './components/ProductList';
 
 function App() {
+  const [items, setItems] = useState([
+    {
+      item: 'Castle Lite',
+      volume: 660,
+      inStock: false,
+      quantity: 0
+    },
+    {
+      item: 'Castle Larger',
+      volume: 750,
+      inStock: false,
+      quantity: 0
+    },
+    {
+      item: 'Black Label',
+      volume: 750,
+      inStock: false,
+      quantity: 0
+    },
+    {
+      item: 'Hansa Pilsener',
+      volume: 750,
+      inStock: false,
+      quantity: 0
+    }
+  ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>I am starting point</h1>
+      <ProductList />
     </div>
   );
 }
