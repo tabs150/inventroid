@@ -1,12 +1,12 @@
 import React from 'react';
 import Product from './Product';
 
-function ProductList({ value }) {
+function ProductList({ value, changeQty }) {
   return (
     <div>
       <h2>I display ProductList</h2>
       {value.map((item, index) => (
-        <Product key={index} index={index} item={item} />
+        <Product key={index} index={index} item={item} changeQty={changeQty} />
       ))}
     </div>
   );

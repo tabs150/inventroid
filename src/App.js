@@ -29,10 +29,22 @@ function App() {
       quantity: 0
     }
   ]);
+
+  const changeQty = e => {
+    const {
+      target: { value, name }
+    } = e;
+
+    let index = Number(name);
+    const newItems = [...items];
+    newItems[index].quantity = Number(value);
+    setItems(newItems);
+  };
+
   return (
     <div className='App'>
       <h1>I am starting point</h1>
-      <ProductList value={items} />
+      <ProductList value={items} changeQty={changeQty} />
     </div>
   );
 }
