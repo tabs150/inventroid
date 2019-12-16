@@ -1,5 +1,4 @@
 import React from 'react';
-// import ProductItem from './ProductItem';
 
 function Product({ index, item, changeQty }) {
   return (

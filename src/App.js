@@ -11,7 +11,7 @@ function App() {
       quantity: 0
     },
     {
-      name: 'Castle Larger',
+      name: 'Castle Lager',
       volume: 750,
       inStock: false,
       quantity: 0
